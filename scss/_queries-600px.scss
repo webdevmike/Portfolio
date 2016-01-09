@@ -1,0 +1,44 @@
+@media screen and (max-width: 600px) {
+
+	/**
+	---------------------------------------------------------------
+	 * Main Sections
+	---------------------------------------------------------------
+	**/
+
+	main {
+
+		section {
+
+			&#overview {
+
+				ul.overview-boxes {
+
+					li {
+						width:80%;
+						margin-right: 0;
+						margin-left: 0;
+						margin-bottom:35px;
+
+						&:last-child {
+							margin-top:35px;
+							margin-bottom:0;
+						}
+					}
+				}
+			}
+
+			&#contact {
+
+				.form-wrapper {
+					width:100%;
+				}
+
+				input, textarea {
+					font-size:0.9em;
+				}
+			}
+		}
+	}
+
+}

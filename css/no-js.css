@@ -1,0 +1,7 @@
+body.loading #main-overlay .preloader {
+	display:none;
+}
+
+body.loading #main-overlay .no-js {
+	display:block;
+}

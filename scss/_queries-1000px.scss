@@ -1,0 +1,44 @@
+@media screen and (max-width: 1000px) {
+
+	/**
+	---------------------------------------------------------------
+	 * Main Sections
+	---------------------------------------------------------------
+	**/
+
+	main {
+
+		section {
+
+			&#home {
+				height:450px;
+
+				h1 {
+					font-size:2.6em;
+				}
+
+				h2 {
+					font-size:2.2em;
+				}
+			}
+
+			&#portfolio {
+
+				ul.portfolio-boxes {
+
+					li {
+						width:46%;
+					}
+				}
+			}
+
+			&#contact {
+
+				.form-wrapper {
+					width:90%;
+				}
+			}
+		}
+	}
+
+}

@@ -1,0 +1,102 @@
+@media screen and (max-width: 700px) {
+
+	/**
+	---------------------------------------------------------------
+	 * Global
+	---------------------------------------------------------------
+	**/
+
+	.heading-lines {
+
+		&:before {
+			display:none;
+		}
+
+		&:after {
+			display:block;
+			margin: 15px auto 0 auto;
+			width: 75px;
+		}
+	}
+
+	/**
+	---------------------------------------------------------------
+	 * Header
+	---------------------------------------------------------------
+	**/
+
+	header {
+
+		nav {
+
+			ul.main-nav {
+
+				li {
+
+					a {
+						font-size:1em;
+					}
+				}
+			}
+		}
+	}
+
+	/**
+	---------------------------------------------------------------
+	 * Main Sections
+	---------------------------------------------------------------
+	**/
+
+	main {
+
+		section {
+			padding-top:70px;
+			padding-bottom:70px;
+
+			&#home {
+				background:url(../images/home-banner-bg-mobile.jpg) center no-repeat;
+				height:350px;
+
+				h1 {
+					font-size:2.2em;
+					line-height: 1.1em;
+					padding-bottom:15px;
+				}
+
+				h2 {
+					font-size:1.8em;
+
+					&:after {
+						height:2px;
+						margin-top:10px;
+						margin-left:auto;
+					}
+				}
+
+				h4 {
+					font-size:0.9em;
+				}
+			}
+
+			&#portfolio {
+
+				ul.portfolio-boxes {
+
+					li {
+						width:100%;
+						margin-right:0;
+						margin-left:0;
+					}
+				}
+			}
+
+			&#reviews {
+
+				ul.reviews-list {
+					padding-top:10px;
+				}
+			}
+		}
+	}
+
+}

@@ -1,0 +1,124 @@
+@media screen and (max-width: 400px) {
+
+	/**
+	---------------------------------------------------------------
+	 * Global
+	---------------------------------------------------------------
+	**/
+
+	header, main, footer {
+		min-width:300px;
+	}
+
+	h2 {
+		font-size:1.8em;
+	}
+
+	/**
+	---------------------------------------------------------------
+	 * Header
+	---------------------------------------------------------------
+	**/
+
+	header {
+		height:60px;
+
+		.logo {
+			width:70px;
+			height:60px;
+			line-height:60px;
+		}
+
+		nav {
+
+			.mobile-nav-icon {
+				font-size:2.4em;
+				height:60px;
+				line-height:60px;
+			}
+
+			ul.main-nav {
+				
+				&.show {
+					top:60px;
+				}
+			}
+		}
+	}
+
+	/**
+	---------------------------------------------------------------
+	 * Main Sections
+	---------------------------------------------------------------
+	**/
+
+	main {
+		padding-top:60px;
+
+		section {
+			padding-top:60px;
+			padding-bottom:60px;
+
+			&#home {
+
+				h1 {
+					font-size:1.8em;
+
+					span {
+						display:block;
+					}
+				}
+
+				h2 {
+					font-size:1.5em;
+				}
+			}
+
+			&#overview {
+
+				ul.overview-boxes {
+
+					li {
+						width:100%;
+					}
+				}
+			}
+
+			&#skills {
+
+				ul.progress-bars {
+
+					li {
+
+						.bar {
+							padding-left:10px;
+
+							span {
+
+								&.percent {
+									font-size:0.95em;
+								}
+							}
+						}
+
+						&:hover {
+
+							.bar {
+								padding-left:10px;
+							}
+						}
+					}
+				}
+			}
+
+			&#about {
+
+				.photo {
+					margin-top:10px;
+					margin-bottom:10px;
+				}
+			}
+		}
+	}
+
+}

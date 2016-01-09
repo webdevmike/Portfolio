@@ -1,0 +1,74 @@
+header {
+	height: 75px;
+	width: 100%;
+	position: fixed;
+	background-color: #FFF;
+	z-index: 4;
+	@include box-shadow(0 1px 5px 0 rgba(0, 0, 0, 0.4));
+
+	.logo {
+		float:left;
+		height:75px;
+		line-height:75px;
+
+		img {
+			vertical-align:middle;
+			@include transition(all, .3s);
+		}
+	}
+
+	nav {
+		float:right;
+
+		ul.main-nav {
+			list-style-type:none;
+			@extend .clear;
+
+			li {
+				float:left;
+
+				&.current {
+
+					a {
+						background-color: $color-grey;
+
+						&:after {
+							width:80%;
+						}
+					}
+				}
+
+				a {
+					display:block;
+					color: $color-blue;
+					text-decoration:none;
+					font-weight:600;
+					height:75px;
+					padding: 25px 13px 0 13px;
+
+					&:after {
+						display:block;
+						content:'';
+						background-color: $color-green;
+						width:0;
+						height:2px;
+						margin:3px auto 0 auto;
+						@include transition(width, .3s);
+					}
+
+					&:hover {
+						background-color: $color-grey;
+
+						&:after {
+							width:80%;
+						}
+					}
+				}
+			}
+		}
+
+		.mobile-nav-icon {
+			display:none;
+		}
+	}
+}

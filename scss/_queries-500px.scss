@@ -1,0 +1,32 @@
+@media screen and (max-width: 500px) {
+
+	/**
+	---------------------------------------------------------------
+	 * Main Sections
+	---------------------------------------------------------------
+	**/
+
+	main {
+
+		section {
+
+			&#skills {
+
+				.skills-container {
+					width:100%;
+				}
+			}
+
+			&#contact {
+
+				.form-wrapper {
+
+					p.contact-message {
+						font-size:0.95em;
+					}
+				}
+			}
+		}
+	}
+
+}
