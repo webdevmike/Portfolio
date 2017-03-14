@@ -8,8 +8,8 @@ if(isset($_POST['name'])) {
 		$message = strip_tags($_POST['message']);
 		
 		// create the email
-		$to = "mike@mikebostone.com";
-		$headers = "From: mike@mikebostone.com"."\r\n";
+		$to = "mikebostone@gmail.com";
+		//$headers = "From: mikebostone@gmail.com"."\r\n";
 		$subject = "Mikebostone.com Contact Form";
 		$body = "Message from contact form: \n
 Name: $name \n
@@ -18,7 +18,7 @@ Message: $message \n
 ";
 		
 		// send the email
-		mail($to,$subject,$body,$headers);
+		mail($to,$subject,$body/*,$headers*/);
 
 }
 
